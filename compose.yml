@@ -1,0 +1,11 @@
+---
+version: "2"
+services:
+  heartbleed:
+    build:
+      context: .
+    ports:
+      - 8443:443
+    networks:
+      - default
+    mem_reservation: "128m"
